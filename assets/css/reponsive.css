@@ -1,7 +1,4 @@
-/* X-Small devices (portrait phones, less than 576px)
-/* No media query for `xs` since this is the default in Bootstrap
-*/
-/* Small devices (landscape phones, 576px and up)*/
+/* tablet - mobile */
 @media screen and (max-width: 991.98px) {
     html {
         overflow-x: hidden;
@@ -71,14 +68,16 @@
     .footer-logo .logo {
         width: 131px;
     }
+    .zalo-icon {
+        bottom: 70px;
+        right: 20px;
+    }
     .zalo-icon .icon {
         width: 50px;
-        bottom: 20px;
-        right: 20px;
     }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Mobile*/
 @media (max-width: 576px) {
     .input-mail {
         height: 40px;

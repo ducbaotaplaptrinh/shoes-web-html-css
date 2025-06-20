@@ -671,30 +671,52 @@ a {
     align-items: center;
     background: #ffff;
     border-radius: 50%;
-    border: #ccc solid 2px;
     cursor: pointer;
     transition: all 0.3s;
 }
 .social-list .icon {
     color: #000;
+    font-weight: 700;
 }
 .social-list .social-item:hover {
     background: #000;
+    box-shadow: 0 0 20px cyan;
 }
 .social-list .social-item:hover .icon {
     color: red;
 }
+.copyright {
+    position: relative;
+    margin: 60px auto 0;
+    color: #555;
+    text-align: center;
+}
+.copyright::after {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1%;
+    background: #555;
+}
 
-.zalo-icon .icon {
-    background: #fff;
+.zalo-icon {
     position: fixed;
     right: 40px;
     bottom: 40px;
-    width: 80px;
-    border-radius: 10px;
-    animation-delay: 2s;
     animation: spinner-2 1s ease-in-out infinite;
 }
+.zalo-icon .icon {
+    background: #fff;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.zalo-icon .icon:hover {
+    transform: scale(1.1);
+}
+
 @keyframes spinner-2 {
     0% {
         transform: rotate(0deg);
