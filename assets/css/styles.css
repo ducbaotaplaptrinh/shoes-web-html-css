@@ -4,6 +4,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     position: relative;
@@ -228,7 +229,7 @@ a {
     color: #fff;
     width: 20px;
     height: 20px;
-    transition: transform 0.3s;
+    transition: all 0.3s;
 }
 .header__cart:hover .icon {
     cursor: pointer;
@@ -288,9 +289,6 @@ a {
 /* Hero */
 .hero {
     position: relative;
-    /* margin-top: -2px;
-    position: relative;
-    background: url(./img/bg-hero.jpg) no-repeat center / cover fixed; */
 }
 .bg-hero {
     position: fixed;
@@ -659,4 +657,58 @@ a {
 }
 .footer-logo .logo {
     width: 181px;
+}
+.social-list {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.social-list .social-item {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffff;
+    border-radius: 50%;
+    border: #ccc solid 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.social-list .icon {
+    color: #000;
+}
+.social-list .social-item:hover {
+    background: #000;
+}
+.social-list .social-item:hover .icon {
+    color: red;
+}
+
+.zalo-icon .icon {
+    background: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 80px;
+    border-radius: 10px;
+    animation-delay: 2s;
+    animation: spinner-2 1s ease-in-out infinite;
+}
+@keyframes spinner-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    } /* giữ nguyên từ 30% đến 100% để dừng */
 }

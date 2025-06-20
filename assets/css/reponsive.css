@@ -71,6 +71,11 @@
     .footer-logo .logo {
         width: 131px;
     }
+    .zalo-icon .icon {
+        width: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -106,6 +111,16 @@
     .card__icon:active {
         color: orange;
         animation: spinner linear 0.3s;
+    }
+
+    .footer-social {
+        width: 100%;
+    }
+    .social-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
     }
 }
 
