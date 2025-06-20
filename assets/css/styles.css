@@ -464,6 +464,7 @@ a {
     line-height: 1.55;
 }
 .card__price {
+    font-size: 1.4rem;
     width: fit-content;
     position: relative;
     color: red;
@@ -589,7 +590,7 @@ a {
 }
 /* footer */
 .footer {
-    padding: 100px 0;
+    padding: 100px 0 50px;
     background: #000;
     color: #ffff;
 }
