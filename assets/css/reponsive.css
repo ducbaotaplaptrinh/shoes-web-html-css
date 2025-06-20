@@ -1,0 +1,98 @@
+/* X-Small devices (portrait phones, less than 576px)
+/* No media query for `xs` since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 991.98px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu.show-mb {
+        display: block;
+    }
+    .header__cart .title {
+        display: none;
+    }
+    .header__inner .action {
+        display: none;
+    }
+    .header__inner .search {
+        width: 60%;
+    }
+    .search__input {
+        opacity: 0;
+        /* width: 0; */
+        transform: translateX(calc(200% - 20px));
+    }
+    .search .icon {
+        right: 0;
+        left: initial;
+        transition: all 0.3s;
+        color: #fff;
+    }
+    .search .icon:hover {
+        cursor: pointer;
+        color: cyan;
+    }
+
+    .search-icon:checked ~ .search__input {
+        opacity: 1;
+        width: 100%;
+        transform: translateX(0);
+    }
+    .search-icon:checked ~ label .icon {
+        color: #000;
+        right: initial;
+        left: 5px;
+    }
+
+    .header__cart .title {
+        display: none;
+    }
+    .hero__inner .desc {
+        width: 100%;
+    }
+
+    .footer-cols {
+        margin-top: 30px;
+    }
+    .footer-logo .logo {
+        width: 131px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 576px) {
+    body {
+        font-size: 1.4rem;
+    }
+    .input-mail {
+        height: 40px;
+    }
+    .input-icon {
+        width: 28px;
+    }
+
+    .product {
+        padding: 50px 0;
+    }
+    .introduce {
+        padding: 50px 0;
+    }
+    .introduce-on .introduce-on__col {
+        width: 50%;
+    }
+    .footer {
+        padding: 50px 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    /* .navbar {
+        display: none;
+    } */
+    .menu.show-mb {
+        display: none;
+    }
+}
