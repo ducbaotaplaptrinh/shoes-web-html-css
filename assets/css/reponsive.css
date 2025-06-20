@@ -39,6 +39,7 @@
         opacity: 1;
         width: 100%;
         transform: translateX(0);
+        background: #fff;
     }
     .search-icon:checked ~ label .icon {
         color: #000;
