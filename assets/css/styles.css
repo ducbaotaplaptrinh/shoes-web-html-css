@@ -33,6 +33,12 @@ a {
     font-family: inherit;
     -webkit-tap-highlight-color: transparent;
 }
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Số dòng muốn hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 /* header */
 .header {
@@ -282,7 +288,7 @@ a {
 .hero {
     margin-top: -2px;
     position: relative;
-    background: url(./img/bg-hero.jpg) no-repeat top left / 100% 100% fixed;
+    background: url(./img/bg-hero.jpg) no-repeat center / cover fixed;
 }
 .hero::after {
     position: absolute;
@@ -445,7 +451,7 @@ a {
     color: red;
     font-size: 1.4rem;
 }
-.card div:nth-of-type(3) {
+.card div:nth-of-type(2) {
     padding: 10px;
     display: flex;
     width: 100%;

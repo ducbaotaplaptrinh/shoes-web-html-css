@@ -3,6 +3,9 @@
 */
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (max-width: 991.98px) {
+    .hero {
+        background-image: url(./img/bg-mb-tablet.jpg);
+    }
     .navbar {
         display: none;
     }
