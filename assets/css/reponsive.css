@@ -3,8 +3,14 @@
 */
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (max-width: 991.98px) {
-    .hero {
-        background-image: url(./img/bg-mb-tablet.jpg);
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .header {
+        position: fixed;
     }
     .navbar {
         display: none;
@@ -56,7 +62,9 @@
     .hero__inner .desc {
         width: 100%;
     }
-
+    .bg-hero {
+        position: absolute;
+    }
     .footer-cols {
         margin-top: 30px;
     }
@@ -67,9 +75,6 @@
 
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 576px) {
-    body {
-        font-size: 1.4rem;
-    }
     .input-mail {
         height: 40px;
     }
@@ -89,13 +94,23 @@
     .footer {
         padding: 50px 0;
     }
+    .card__img .img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        transition: all 0.3s;
+        background-position: left bottom;
+    }
+
+    .card__icon:active {
+        color: orange;
+        animation: spinner linear 0.3s;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    /* .navbar {
-        display: none;
-    } */
     .menu.show-mb {
         display: none;
     }
