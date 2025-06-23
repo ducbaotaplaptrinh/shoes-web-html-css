@@ -75,6 +75,10 @@
     .zalo-icon .icon {
         width: 50px;
     }
+
+    .form-login {
+        width: 60%;
+    }
 }
 
 /* Mobile*/
@@ -121,11 +125,24 @@
         justify-content: space-evenly;
         gap: 0;
     }
+
+    /* form */
+    .form-login:not(:placeholder-shown) {
+        box-shadow: none;
+        border-color: none;
+    }
+
+    .form-login {
+        width: 100%;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     .menu.show-mb {
         display: none;
+    }
+    .form-login {
+        width: 40%;
     }
 }

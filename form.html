@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- grid css -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="./assets/css/reponsive.css" />
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!--  icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <title>Login</title>
+    </head>
+    <body>
+        <section class="form">
+            <div class="container">
+                <form action="./index.html" class="form-login" method="get">
+                    <input
+                        class="check-show-register"
+                        type="checkbox"
+                        name="register"
+                        id="register"
+                        hidden
+                    />
+                    <h1 class="form-title show-login">Đăng nhập</h1>
+                    <h1 class="form-title show-register">Đăng ký</h1>
+                    <div class="group-input">
+                        <input
+                            class="input"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder=" "
+                            pattern="^[A-Za-zÀ-ỹ\s]{2,50}$"
+                            required
+                        />
+                        <label for="name">Name </label>
+                        <i class="fa-solid fa-user icon"></i>
+                    </div>
+                    <div class="group-input">
+                        <input
+                            class="input"
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder=" "
+                            pattern="^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$"
+                        />
+                        <label for="email">Mail</label>
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </div>
+                    <div class="group-input">
+                        <input
+                            class="input"
+                            type="password"
+                            name="password"
+                            id="password"
+                            required
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+=\-]{8,}$"
+                            placeholder=" "
+                        />
+                        <label for="password">Password</label>
+                        <i class="fa-solid fa-lock icon"></i>
+                    </div>
+
+                    <div class="group-input show-register">
+                        <input
+                            class="input"
+                            type="password"
+                            name="confirm_password"
+                            id="confirm_password"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+=\-]{8,}$"
+                            placeholder="Nhập lại mật khẩu ..."
+                        />
+                        <i class="fa-solid fa-lock icon"></i>
+                    </div>
+
+                    <div class="group-checkbox show-login">
+                        <input
+                            class="input"
+                            type="checkbox"
+                            name="check"
+                            id="check"
+                            hidden
+                        />
+                        <label for="check">Ghi nhớ mật khẩu</label>
+                    </div>
+                    <button class="form-button show-login" type="submit">
+                        Đăng nhập
+                    </button>
+                    <button class="form-button show-register" type="submit">
+                        Đăng ký
+                    </button>
+
+                    <div class="group-register show-login">
+                        <p class="desc">Bạn chưa có tài khoản?</p>
+                        <label for="register">Đăng ký</label>
+                    </div>
+                    <div class="group-login show-register">
+                        <p class="desc">Bạn Đã có tài khoản?</p>
+                        <label for="register">Đăng nhập</label>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

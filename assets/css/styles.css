@@ -33,6 +33,12 @@ a {
     font-family: inherit;
     -webkit-tap-highlight-color: transparent;
 }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #272740 inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 9999s ease-out;
+}
 .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Số dòng muốn hiển thị */
@@ -598,6 +604,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 .footer-link {
     margin: 20px 0;
     display: flex;
@@ -607,8 +614,17 @@ a {
     color: #999;
     transition: all 0.4s;
 }
+.footer-link .icon {
+    margin-right: 5px;
+    width: 16px;
+    color: #999;
+    transition: all.3s;
+}
+.footer-link:hover .icon {
+    color: #fed700;
+}
 
-.footer-link .link:hover {
+.footer-link:hover .link {
     color: #fed700;
     text-decoration: underline;
 }
@@ -632,7 +648,7 @@ a {
 .footer-list__link::before {
     position: absolute;
     top: 50%;
-    left: calc(-1 * (5% + 5px));
+    left: calc(-1 * (7% + 5px));
     content: "";
     width: 0%;
     height: 1%;
@@ -641,12 +657,12 @@ a {
 }
 
 .footer-list__item:hover .footer-list__link {
-    transform: translateX(calc(5% + 5px));
+    transform: translateX(calc(7% + 5px));
     color: #fed700;
 }
 .footer-list__item:hover .footer-list__link::before {
     background: #fed700;
-    width: 5%;
+    width: 7%;
 }
 .footer-input {
     width: 80%;
@@ -686,6 +702,13 @@ a {
 .social-list .social-item:hover .icon {
     color: red;
 }
+.social-list .social-item:active {
+    background: #000;
+    box-shadow: 0 0 20px cyan;
+}
+.social-list .social-item:active .icon {
+    color: red;
+}
 .copyright {
     position: relative;
     margin: 60px auto 0;
@@ -698,7 +721,7 @@ a {
     left: 0;
     content: "";
     width: 100%;
-    height: 1%;
+    height: 2%;
     background: #555;
 }
 
@@ -734,4 +757,217 @@ a {
     100% {
         transform: rotate(0deg);
     } /* giữ nguyên từ 30% đến 100% để dừng */
+}
+
+/* form - login/sign up */
+.form {
+    width: 100%;
+    height: 100vh;
+    background: #272740;
+}
+.form .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 360px;
+    padding: 30px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #999;
+    border-radius: 20px;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.group-input {
+    position: relative;
+    color: #fff;
+}
+
+.form-login .input {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    background: transparent;
+    transition: all 0.3s;
+    border-bottom: 2px solid #999;
+}
+.form-login .group-input::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(-1% - 3px);
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 60%;
+    background: #999;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.form-login:focus-within {
+    border-color: cyan;
+    box-shadow: 0 0 35px cyan;
+}
+.form-login:focus-within .form-title {
+    color: cyan;
+    text-shadow: 0 0 5px cyan;
+}
+.form-login .group-input:focus-within::after {
+    background-color: cyan;
+    opacity: 1;
+}
+.form-login .group-input:focus-within label,
+.form-login .group-input:focus-within .icon {
+    color: cyan;
+}
+
+.form-login .group-input:focus-within .input {
+    border-color: cyan;
+}
+.group-input label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    color: #999999;
+    transition: all 0.3s;
+}
+.group-input .icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transition: all 0.3s;
+    transform: translate(0, -50%);
+    color: #9999;
+}
+
+.form-login:not(:placeholder-shown) {
+    box-shadow: 0 0 35px cyan;
+    border-color: cyan;
+}
+.form-login .input:not(:placeholder-shown) {
+    border-color: cyan;
+}
+.form-login:not(:placeholder-shown) .form-title {
+    color: cyan;
+    text-shadow: 0 0 5px cyan;
+}
+.group-input .input:not(:placeholder-shown) ~ label {
+    color: cyan;
+    font-size: 1.4rem;
+    transform: translate(0, -170%);
+}
+.group-input .input:not(:placeholder-shown) ~ .icon {
+    color: cyan;
+}
+.group-input .input:focus ~ label {
+    font-size: 1.4rem;
+    transform: translate(0, -170%);
+}
+
+.form-title {
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+    font-size: clamp(2rem, 11vw, 4rem);
+    font-weight: 700;
+}
+.form-button {
+    width: 100%;
+    height: 40px;
+    color: #999;
+    font-size: 1.7rem;
+    font-weight: 800;
+    border: 2px solid #999;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.form-button:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffff;
+    background: cyan;
+    border-color: cyan;
+    box-shadow: 0 0 25px cyan;
+    cursor: pointer;
+}
+.group-checkbox {
+    margin: -10px 0;
+}
+.group-checkbox label {
+    position: relative;
+    transition: all 0.3s;
+    color: #999;
+}
+.group-checkbox label::after {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(0, -50%);
+    content: "";
+    height: 14px;
+    width: 14px;
+    border: 3px solid #9999;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+.group-checkbox label::before {
+    position: absolute;
+    top: 35%;
+    right: -30px;
+    transform: translate(0, -50%);
+    rotate: -45deg;
+    content: "";
+    width: 9px;
+    height: 3px;
+    border: 3px solid;
+    border-color: transparent transparent #fff #fff;
+    border-radius: 3px;
+    transition: all 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+.group-checkbox .input:checked ~ label::after {
+    background: cyan;
+    border-color: cyan;
+}
+.group-checkbox .input:checked ~ label::before {
+    opacity: 1;
+}
+.group-checkbox .input:checked ~ label {
+    color: cyan;
+}
+.group-register {
+    display: flex;
+}
+
+.group-register label,
+.group-login label {
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+}
+.group-register label:hover {
+    text-decoration: underline;
+}
+.check-show-register:not(:checked) ~ .show-register {
+    display: none;
+}
+.check-show-register:checked ~ .show-register {
+    display: inline-block;
+}
+.check-show-register:checked ~ .group-login.show-register {
+    display: flex;
+}
+.check-show-register:checked ~ .show-login {
+    display: none;
 }
