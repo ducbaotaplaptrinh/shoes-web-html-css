@@ -24,11 +24,17 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
         <title>Login</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/css/img/favicon.png"
+            type="image/x-icon"
+        />
     </head>
     <body>
         <section class="form">
             <div class="container">
                 <form action="./index.html" class="form-login" method="get">
+                    <!-- check show register -->
                     <input
                         class="check-show-register"
                         type="checkbox"
@@ -37,6 +43,7 @@
                         hidden
                     />
                     <h1 class="form-title show-login">Đăng nhập</h1>
+                    <!-- show register -->
                     <h1 class="form-title show-register">Đăng ký</h1>
                     <div class="group-input">
                         <input
@@ -64,7 +71,7 @@
                         <label for="email">Mail</label>
                         <i class="fa-solid fa-envelope icon"></i>
                     </div>
-                    <div class="group-input">
+                    <div class="group-input input-pass">
                         <input
                             class="input"
                             type="password"
@@ -78,7 +85,7 @@
                         <i class="fa-solid fa-lock icon"></i>
                         <p class="desc">Mật khẩu gồm chữ và số</p>
                     </div>
-
+                    <!-- show register -->
                     <div class="group-input show-register">
                         <input
                             class="input"
@@ -105,6 +112,7 @@
                     <button class="form-button show-login" type="submit">
                         Đăng nhập
                     </button>
+                    <!-- show register -->
                     <button class="form-button show-register" type="submit">
                         Đăng ký
                     </button>
@@ -113,6 +121,7 @@
                         <p class="desc">Bạn chưa có tài khoản?</p>
                         <label for="register">Đăng ký</label>
                     </div>
+                    <!-- show register -->
                     <div class="group-login show-register">
                         <p class="desc">Bạn Đã có tài khoản?</p>
                         <label for="register">Đăng nhập</label>

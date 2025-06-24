@@ -12,7 +12,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
 }
-/* common */
+/*--------------------------- common ------------------*/
 a {
     text-decoration: none;
 }
@@ -33,7 +33,7 @@ a {
     font-family: inherit;
     -webkit-tap-highlight-color: transparent;
 }
-
+/*--------------------------- delete background normal input ------------------*/
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #272740 inset !important;
     -webkit-text-fill-color: white !important;
@@ -41,12 +41,12 @@ input:-webkit-autofill {
 }
 .line-clamp-2 {
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Số dòng muốn hiển thị */
+    -webkit-line-clamp: 2; /*--------------------------- Số dòng muốn hiển thị ------------------*/
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* header */
+/*--------------------------- header ------------------*/
 .header {
     position: sticky;
     width: 100%;
@@ -68,7 +68,7 @@ input:-webkit-autofill {
     width: 131px;
 }
 
-/* nav */
+/*--------------------------- navBar------------------*/
 .navbar .row {
     flex-wrap: nowrap !important;
 }
@@ -104,7 +104,7 @@ input:-webkit-autofill {
     width: 100%;
 }
 
-/* navbar - mobile - tablet */
+/*--------------------------- navbar - mobile - tablet ------------------*/
 .overlay {
     display: inline-block;
     position: absolute;
@@ -292,7 +292,7 @@ input:-webkit-autofill {
     transform: scale(1.1);
     color: cyan;
 }
-/* Hero */
+/*----------------------Hero------------------ */
 .hero {
     position: relative;
 }
@@ -380,7 +380,7 @@ input:-webkit-autofill {
     color: #fff;
     font-size: clamp(1.6rem, 3vw, 3rem);
 }
-/* Produce */
+/*--------------------------- Produce ------------------*/
 .product {
     padding: 100px 0;
     background: #f5f5f5;
@@ -511,7 +511,7 @@ input:-webkit-autofill {
     color: rgb(254, 39, 39);
     box-shadow: inset 2px 2px 5px #8c8c8c, 0 0 0 #8c8c8c;
 }
-/* Introduce */
+/*--------------------------- Introduce ------------------*/
 
 .introduce {
     background: #fff;
@@ -594,7 +594,7 @@ input:-webkit-autofill {
     flex-shrink: 0;
     border-color: #000;
 }
-/* footer */
+/*--------------------------- footer ------------------*/
 .footer {
     padding: 100px 0 50px;
     background: #000;
@@ -756,10 +756,10 @@ input:-webkit-autofill {
     }
     100% {
         transform: rotate(0deg);
-    } /* giữ nguyên từ 30% đến 100% để dừng */
+    }
 }
 
-/* form - login/sign up */
+/*--------------------------- form - login/register ------------------*/
 .form {
     width: 100%;
     height: 100vh;
@@ -768,8 +768,10 @@ input:-webkit-autofill {
 .form .container {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 .form-login {
     position: relative;
@@ -850,13 +852,21 @@ input:-webkit-autofill {
     transform: translate(0, -50%);
     color: #9999;
 }
+.form .desc {
+    color: #999;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
 .group-input .desc {
     position: absolute;
     bottom: -20px;
     left: 0;
-    color: #999;
-    font-size: 1.4rem;
-    font-weight: 500;
+
+    opacity: 0;
+    transition: all 0.3s;
+}
+.input-pass:focus-within .desc {
+    opacity: 1;
 }
 
 .form-login:not(:placeholder-shown) {
@@ -961,7 +971,8 @@ input:-webkit-autofill {
     font-weight: 600;
     cursor: pointer;
 }
-.group-register label:hover {
+.group-register label:hover,
+.group-login label:hover {
     text-decoration: underline;
 }
 .check-show-register:not(:checked) ~ .show-register {
