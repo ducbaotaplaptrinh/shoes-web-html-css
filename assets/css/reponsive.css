@@ -61,6 +61,8 @@
     }
     .bg-hero {
         position: absolute;
+        width: auto;
+        height: 100vh;
     }
     .footer-cols {
         margin-top: 30px;

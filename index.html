@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- reset css-->
         <link rel="stylesheet" href="./assets/css/reset.css" />
-        <!-- styles css -->
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+
         <!-- grid css -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
+        <!-- styles css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
         <!-- responsive -->
         <link rel="stylesheet" href="./assets/css/reponsive.css" />
         <!-- font -->
@@ -28,7 +29,7 @@
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
         />
-        <title>Bảo An shop</title>
+        <title>Bảo An | Shoes shop</title>
         <link
             rel="shortcut icon"
             href="./assets/css/img/favicon.png"
@@ -48,22 +49,22 @@
                         />
                     </a>
                     <nav class="navbar">
-                        <ul class="nav-list row row-cols-xl-4">
-                            <li class="nav-item col">
+                        <ul class="nav-list">
+                            <li class="nav-item">
                                 <a href="#home" class="item-link">Trang chủ</a>
                             </li>
-                            <li class="nav-item col">
+                            <li class="nav-item">
                                 <a href="#product" class="item-link"
                                     >Sản phẩm</a
                                 >
                             </li>
-                            <li class="nav-item col">
+                            <li class="nav-item">
                                 <a href="#produce" class="item-link"
                                     >Giới thiệu</a
                                 >
                             </li>
 
-                            <li class="nav-item col">
+                            <li class="nav-item">
                                 <a href="#footer" class="item-link">Liên hệ </a>
                             </li>
                         </ul>
@@ -178,7 +179,7 @@
         <section class="hero" id="home">
             <div class="container">
                 <div class="hero__inner" data-aos="zoom-in">
-                    <h1 class="title">Shoes Shop</h1>
+                    <h1 class="title"><span>Shoes</span> Shop</h1>
                     <p class="desc">
                         “Bắt đầu ngày mới bằng một đôi giày phù hợp – bởi phong
                         cách không đến từ nơi bạn đến, mà từ cách bạn bước đi.”
@@ -216,15 +217,13 @@
         <section class="product" id="product">
             <div class="container">
                 <div class="product__inner">
-                    <h2 class="product__title">Sản phẩm nổi bật</h2>
+                    <h2 class="heading">Sản phẩm nổi bật</h2>
                     <div
                         class="cart-list row row-cols-xl-4 row-cols-lg-4 row-cols-sm-2"
                     >
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-1.jpg"
                                         alt=""
@@ -237,8 +236,14 @@
                                     PAISLEY
                                 </h3>
                                 <div>
-                                    <div class="card__price">1.900.000 VNĐ</div>
-
+                                    <div>
+                                        <span class="card__price"
+                                            >1.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -246,11 +251,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (1).jpg"
                                         alt=""
@@ -261,7 +264,14 @@
                                     NIKE DUNK LOW - COAST
                                 </h3>
                                 <div>
-                                    <div class="card__price">2.500.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >2.500.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -269,11 +279,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (3).jpg"
                                         alt=""
@@ -284,7 +292,14 @@
                                     M NIKE AIR FORCE 1 LOW CUS GUCCI
                                 </h3>
                                 <div>
-                                    <div class="card__price">2.950.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >2.950.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -292,11 +307,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (4).jpg"
                                         alt=""
@@ -307,7 +320,14 @@
                                     NIKE AIR FORCE 1 WHITE SWOOSH - BLACK/ WHITE
                                 </h3>
                                 <div>
-                                    <div class="card__price">1.700.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >1.700.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -315,11 +335,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (5).jpg"
                                         alt=""
@@ -330,7 +348,14 @@
                                     WMNS JORDAN 1 MID BURGUNDY - DUSTY PINK
                                 </h3>
                                 <div>
-                                    <div class="card__price">4.900.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >4.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -338,11 +363,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (6).jpg"
                                         alt=""
@@ -353,7 +376,14 @@
                                     JORDAN 1 LOW SIREN RED
                                 </h3>
                                 <div>
-                                    <div class="card__price">2.900.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >2.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -361,11 +391,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (7).jpg"
                                         alt=""
@@ -376,7 +404,14 @@
                                     JORDAN 1 MID GYM RED BLACK
                                 </h3>
                                 <div>
-                                    <div class="card__price">2.900.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >2.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -384,11 +419,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (8).jpg"
                                         alt=""
@@ -399,7 +432,14 @@
                                     MLB PLAYBALLL MULE ORIGIN NY YANKEES - BLACK
                                 </h3>
                                 <div>
-                                    <div class="card__price">2.900.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >2.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -407,11 +447,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (9).jpg"
                                         alt=""
@@ -422,7 +460,14 @@
                                     MLB PLAYBALLL MULE ORIGIN NY YANKEES - WHITE
                                 </h3>
                                 <div>
-                                    <div class="card__price">1.900.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >1.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -430,11 +475,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (10).jpg"
                                         alt=""
@@ -445,7 +488,14 @@
                                     MLB PLAYBALLL MULE ORIGIN NY YANKEES - BLACK
                                 </h3>
                                 <div>
-                                    <div class="card__price">1.900.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >1.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -453,11 +503,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (11).jpg"
                                         alt=""
@@ -469,7 +517,14 @@
                                     - WHITE
                                 </h3>
                                 <div>
-                                    <div class="card__price">1.200.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >1.200.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -477,11 +532,9 @@
                                 <button class="card__pay">Mua ngay</button>
                             </section>
                         </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
+                        <div class="col-12 col-xl-3 col-lg-3 col-sm-6">
+                            <section class="card-item" data-aos="fade-up">
+                                <div class="card-item__img">
                                     <img
                                         src="./assets/css/img/card-img-2 (12).jpg"
                                         alt=""
@@ -492,100 +545,14 @@
                                     ADIDAS OZELIA FIERY G54894
                                 </h3>
                                 <div>
-                                    <div class="card__price">2.900.000 VNĐ</div>
-                                    <i
-                                        class="fa-solid fa-cart-plus card__icon"
-                                    ></i>
-                                </div>
-                                <button class="card__pay">Mua ngay</button>
-                            </section>
-                        </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
-                                    <img
-                                        src="./assets/css/img/card-img-2 (13).jpg"
-                                        alt=""
-                                        class="img"
-                                    />
-                                </div>
-                                <h3 class="card__title line-clamp-2">
-                                    Giày VL Court 3.0
-                                </h3>
-                                <div>
-                                    <div class="card__price">1.200.000 VNĐ</div>
-                                    <i
-                                        class="fa-solid fa-cart-plus card__icon"
-                                    ></i>
-                                </div>
-                                <button class="card__pay">Mua ngay</button>
-                            </section>
-                        </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
-                                    <img
-                                        src="./assets/css/img/card-img-2 (14).jpg"
-                                        alt=""
-                                        class="img"
-                                    />
-                                </div>
-                                <h3 class="card__title line-clamp-2">
-                                    Giày Adidas Originals Forum Low ‘Green’
-                                    GX9398
-                                </h3>
-                                <div>
-                                    <div class="card__price">1.500.000 VNĐ</div>
-                                    <i
-                                        class="fa-solid fa-cart-plus card__icon"
-                                    ></i>
-                                </div>
-                                <button class="card__pay">Mua ngay</button>
-                            </section>
-                        </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
-                                    <img
-                                        src="./assets/css/img/card-img-2 (15).jpg"
-                                        alt=""
-                                        class="img"
-                                    />
-                                </div>
-                                <h3 class="card__title line-clamp-2">
-                                    Adidas Alphabounce Beyond Black
-                                </h3>
-                                <div>
-                                    <div class="card__price">2.100.000 VNĐ</div>
-                                    <i
-                                        class="fa-solid fa-cart-plus card__icon"
-                                    ></i>
-                                </div>
-                                <button class="card__pay">Mua ngay</button>
-                            </section>
-                        </div>
-                        <div
-                            class="card-item col-12 col-xl-3 col-lg-3 col-sm-6"
-                        >
-                            <section class="card" data-aos="fade-up">
-                                <div class="card__img">
-                                    <img
-                                        src="./assets/css/img/card-img-2 (16).jpg"
-                                        alt=""
-                                        class="img"
-                                    />
-                                </div>
-                                <h3 class="card__title line-clamp-2">
-                                    Adidas Prophere Grey Solar Black
-                                </h3>
-                                <div>
-                                    <div class="card__price">1.000.000 VNĐ</div>
+                                    <div>
+                                        <span class="card__price"
+                                            >2.900.000 VNĐ</span
+                                        >
+                                        <span class="old__price"
+                                            >4.000.000</span
+                                        >
+                                    </div>
                                     <i
                                         class="fa-solid fa-cart-plus card__icon"
                                     ></i>
@@ -594,6 +561,213 @@
                             </section>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- product list sale -->
+        <section class="product-sale">
+            <div class="container">
+                <div class="product-sale__inner">
+                    <h2 class="heading">Sản phẩm sale</h2>
+                    <button class="scroll-btn left">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="product-sale-list" id="product-sale-list">
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (13).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Giày VL Court 3.0
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >1.200.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (14).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Giày Adidas Originals Forum Low ‘Green’ GX9398
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >1.500.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (15).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Adidas Alphabounce Beyond Black
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >2.100.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (16).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Adidas Prophere Grey Solar Black
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >1.000.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (13).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Giày VL Court 3.0
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >1.200.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (14).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Giày Adidas Originals Forum Low ‘Green’ GX9398
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >1.500.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (15).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Adidas Alphabounce Beyond Black
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >2.100.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+
+                        <section class="card-item">
+                            <span class="card-tag">-10%</span>
+                            <div class="card-item__img">
+                                <img
+                                    src="./assets/css/img/card-img-2 (16).jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                            <h3 class="card__title line-clamp-2">
+                                Adidas Prophere Grey Solar Black
+                            </h3>
+                            <div>
+                                <div>
+                                    <span class="card__price"
+                                        >1.000.000 VNĐ</span
+                                    >
+                                    <span class="old__price">4.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-cart-plus card__icon"></i>
+                            </div>
+                            <button class="card__pay">Mua ngay</button>
+                        </section>
+                    </div>
+                    <button class="scroll-btn right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -880,6 +1054,19 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+
+        <script>
+            const container = document.getElementById("product-sale-list");
+            const scrollAmount = 240; // scroll mỗi lần ~ 1 card
+
+            document.querySelector(".left").addEventListener("click", () => {
+                container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+            });
+
+            document.querySelector(".right").addEventListener("click", () => {
+                container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            });
         </script>
     </body>
 </html>
